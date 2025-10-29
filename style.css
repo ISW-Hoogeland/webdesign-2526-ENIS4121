@@ -36,6 +36,29 @@
 
 /* add your css here, feel free to use comments and order them logically for better readability */
 
+:root{
+    --h1-bg: #ffffff;
+    --h1-text: #1e2d2b;
+    --h2-text: #74A9CB;
+    --h2-border: var(--h1-bg);
+    --h3-text: #D67160;
+
+    --list-bg: #e8f8f0;
+    --list-border: #A1D69A;
+    --strong-text: var(--h3-text);
+    --code-bg: #f0f0f0;
+
+    --def-bg: #f2fef9;
+    --def-border: var(--h1-bg);
+    --def-title: var(--text-dark);
+
+    --nav-bg: var(--h2-text);
+    --nav-text: var(--code-bg);
+
+    --footer-bg: var(--h1-bg); 
+    --footer-text: var(--h1-text);
+}
+
 body {
 display: grid;
 grid-template-areas:
@@ -45,3 +68,25 @@ grid-template-areas:
 "footer";
 grid-template-rows:120px 60px 1fr 60px;
 }
+
+header {
+grid-area: header;
+ }
+
+nav {
+grid-area: nav;
+ }
+
+main {
+grid-area: main;
+}
+
+footer {
+grid-area: footer;
+ }
+
+ h1{
+    color: white; 
+     
+ }
+
