@@ -35,3 +35,13 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+
+body {
+display: grid;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"footer";
+grid-template-rows:120px 60px 1fr 60px;
+}
