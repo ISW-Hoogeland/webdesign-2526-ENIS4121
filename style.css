@@ -37,13 +37,13 @@
 /* add your css here, feel free to use comments and order them logically for better readability */
 
 :root{ 
---color1: #0003a5de;
+--color1: #0e11b1de;
 --color2: #ceffe2;
 --color3: #ffffff;
---color4: #0003a5de;
+--color4: #5759c9d3;
 --color5: #000000e0;
 
-
+--mFont: "Zalando Sans Expanded", sans-serif;
 }
 
 body {
@@ -59,8 +59,10 @@ grid-template-rows: 100px 50px 1fr 15px;
 }
 
 header {
-grid-area: header;
-background-color: var(--color1);
+   grid-area: header;
+   background-color: var(--color1);
+   font-family: var(--mFont);
+   justify-content: center;
 }
 
 header img {
@@ -69,54 +71,76 @@ header img {
 }
 
 nav {
-grid-area: nav;
-background-color: var(--color2);
- }
-
+   grid-area: nav;
+   background-color: var(--color2);
+}
 
 nav ul {
    display: flex;
    justify-content: space-evenly;
+   list-style: none;
+}
+
+nav a {
+   text-decoration: none;
+   font-family: var(--mFont);
+   background-color: var(--color3);
+   border-radius: 5px;
+   transition: 0.4s ease;
+}
+
+nav a:hover {
+   opacity: 50%;
 }
 
 main {
-grid-area: main;
-background-color: var(--color3);
+   grid-area: main;
+   background-color: var(--color3);
 }
 
 main ul {
    list-style: none;
-   gap: 100px;
+   gap: 50px;
    display: flex;
-   margin-left: 150px;
-   margin-right: 150px;
+   justify-content: center;
 }
 
 main li img {
    height: 250px;
    width: auto;
+   border: solid var(--color1);
    border-radius: 20px;
+   border-width: 5px;
 }
 
 main p {
+   border-top: solid var(--color1);
+   border-top-width: 2px;
+   padding-top: 20px;
+   margin-top: 50px;
    margin-left: 20px;
+   font-family: var(--mFont);
 }
 
 footer {
-grid-area: footer;
-background-color: var(--color4)
- }
+   grid-area: footer;
+   border-top: solid var(--color4);
+   border-top-width: 2px;
+   font-family: var(--mFont);
+   font-size: small;
+}
 
- h1{
+h1 {
    text-align: center;
    font-size: 40px;
    color: var(--color3)
-     
- }
- h2{
+}
+
+h2 {
    font-size: 20px;
    color: var(--color5);
- }
-h3{
-font-size: 35px;
+}
+
+h3 {
+   font-size: 35px;
 }
