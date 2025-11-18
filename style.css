@@ -86,14 +86,16 @@ background-color: var(--color3);
 
 main ul {
    list-style: none;
-   gap: 150px;
+   gap: 100px;
    display: flex;
+   margin-left: 150px;
+   margin-right: 150px;
 }
 
 main li img {
    height: 250px;
    width: auto;
-   border-radius: 12px;
+   border-radius: 20px;
 }
 
 main p {
