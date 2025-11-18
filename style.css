@@ -48,12 +48,14 @@
 
 body {
 display: grid;
+min-height: 100svh;
 grid-template-areas:
-"header"
-"nav"
-"main"
-"footer";
-grid-template-rows:120px 60px 1fr 60px;
+"header header"
+"nav nav"
+"main main"
+"footer footer";
+grid-template-columns: 1fr, 1fr;
+grid-template-rows: 100px 50px 1fr 15px;
 }
 
 header {
@@ -77,6 +79,18 @@ grid-area: main;
 background-color: var(--color3);
 }
 
+main ul {
+   list-style: none;
+   justify-content: flex-end;
+   gap: 50px;
+}
+
+main li img {
+   height: 300px;
+   width: auto;
+   border-radius: 12px;
+}
+
 footer {
 grid-area: footer;
 background-color: var(--color4)
@@ -94,8 +108,4 @@ background-color: var(--color4)
  }
 h3{
 font-size: 35px;
-}
-img {
-   height: 150px;
-
 }
